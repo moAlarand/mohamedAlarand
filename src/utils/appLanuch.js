@@ -8,5 +8,5 @@ export default () => {
 
   setTimeout(() => {
     SplashScreen.hide();
-  }, 5000);
+  }, 3000);
 };
