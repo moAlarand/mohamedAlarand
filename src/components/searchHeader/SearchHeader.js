@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     alignSelf: 'stretch',
-    backgroundColor: '#f7f7f7',
+    backgroundColor: 'white',
     ...commonStyles.headerShadow,
   },
   search: {

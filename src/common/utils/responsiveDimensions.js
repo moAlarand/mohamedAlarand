@@ -6,7 +6,7 @@ const {roundToNearestPixel} = PixelRatio;
 
 const decorateHeights = Platform.OS === 'android' ? StatusBar.currentHeight : 0;
 
-export const APPBAR_HEIGHT = 56;
+export const APPBAR_HEIGHT = Platform.OS === 'android' ? 56 : 60;
 
 export const {width: windowWidth} = Dimensions.get('window');
 export const windowHeight = Dimensions.get('window').height - decorateHeights;

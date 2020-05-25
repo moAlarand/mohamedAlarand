@@ -7,12 +7,10 @@ import {useSelector} from 'react-redux';
 
 export default () => {
   const movies = useSelector(state => state.favorites.movies);
-
-  console.log('movies_------------_________', movies, 'vvvvvvvvvv');
   return (
     <>
       <AppHeader title={I18n.t('favourites')} />
-      <View style={{flex: 1}}>
+      <View style={{flex: 1,    backgroundColor:'#f7f7f7'}}>
         <MoviesList movies={movies} />
       </View>
     </>
