@@ -12,14 +12,14 @@ export default props => {
     <View style={styles.container}>
       <TextInput
         underlineColorAndroid="transparent"
-        keyboardType="visible-password"
+        keyboardType={Platform.OS==='ios'?"web-search":"visible-password"}
         placeholder={I18n.t('search')}
         style={styles.input}
         onSubmitEditing={getSearchMovies}
         onChangeText={setSearchQuery}
       />
       <AppIconButton
-        style={{backgroundColor: '#e98827', borderRadius: 40, margin: 5}}
+        style={{backgroundColor: '#e98827', width:40,height:40, borderRadius: 20, margin: 5}}
         size={25}
         name={Platform.OS == 'ios' ? 'ios-search' : 'md-search'}
         type="ion"

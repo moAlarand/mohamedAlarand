@@ -7,6 +7,7 @@ export default StyleSheet.create({
     alignSelf: 'stretch',
     borderRadius: 4,
     flexDirection: 'row',
+    backgroundColor:'white',
     ...commonStyles.cardShadow,
   },
   content: {

@@ -7,7 +7,7 @@ export default props => {
   const {title, flat} = props;
   return (
     <SafeAreaView
-      style={[styles.container, !flat && stylescommon.headerShadow]}>
+      style={[styles.containerSafe, !flat && stylescommon.headerShadow]}>
       <View style={[styles.container, !flat && styles.shadow]}>
         <Text style={styles.text}>{title}</Text>
       </View>
@@ -16,6 +16,11 @@ export default props => {
 };
 
 const styles = StyleSheet.create({
+  containerSafe:{
+    justifyContent: 'center',
+    alignSelf: 'stretch',
+    backgroundColor: 'white'
+  },
   container: {
     justifyContent: 'center',
     height: APPBAR_HEIGHT,
